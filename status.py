@@ -24,5 +24,6 @@ if __name__ == '__main__':
     temp = f"temp: {gpu_temp}C"
     ramUsed = f"ram used: {round(ram.used/(1024**3))}GiB"
     diskFree = f"disk free: {round(disk.free/(1024**3))}GiB"
+    nameMall = 'QN:'
     
-    sendSlackMsg("\n".join([gpu,gpuMem,temp,ramUsed,diskFree]))
+    sendSlackMsg("\n".join([nameMall,gpu,gpuMem,temp,ramUsed,diskFree]))
