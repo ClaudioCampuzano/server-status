@@ -15,4 +15,4 @@ pip3 install -r requirements.txt
 ===============================================================================
 3. Uso
 ===============================================================================
-./exec.sh QN ~/Documents/logs/faust.log ~/Documents/logs/flujo_quicentro_norte.log
+./exec.sh 
