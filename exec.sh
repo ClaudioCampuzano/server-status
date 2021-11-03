@@ -1,3 +1,4 @@
 myloc=$(realpath "$0" | sed 's|\(.*\)/.*|\1|')
-source $myloc/env/bin/activate
-python3 $myloc/status.py -n QN -f /home/omia/Documents/logs/faust.log -d /home/omia/Documents/logs/flujo_quicentro_norte.log
+dirLogs='/home/omia/Documents/logs'
+source  $myloc/env/bin/activate
+python3  $myloc/status.py -n QN --logFlujoFaust $dirLogs/flujo/faust.log --logFlujoDs $dirLogs/flujo/ds.log --logAforoFaust $dirLogs/aforo/faust.log --logAforoDs $dirLogs/aforo/ds.log
