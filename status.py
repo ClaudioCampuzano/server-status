@@ -10,9 +10,9 @@ def sendSlackMsg(message):
         print('Ok')
     else:
         print('Error')
-
+        
 def getInfoDs(filename, analyticalType):
-    Ds_process='*'+analyticalType+'* Ds:\n'
+    Ds_process='`'+analyticalType+' Ds:`\n'
     gatillo = False
     try:
         for line in reversed(list(open(filename))):
@@ -29,7 +29,7 @@ def getInfoDs(filename, analyticalType):
         return Ds_process
 
 def getInfoFaust(filename, analyticalType):
-    Faust_process = '*'+analyticalType+'* Faust:\n ```'
+    Faust_process = '`'+analyticalType+' Faust:`\n ```'
     try:
         for index, line in enumerate(reversed(list(open(filename)))):
             if index < 3:
